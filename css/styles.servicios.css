@@ -1,0 +1,35 @@
+/* Estilo específico para la Galería de Juegos */
+.main-gallery {
+    padding: 50px 0;
+    background-color: #111;
+}
+
+.main-gallery img {
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.main-gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Filtro de imágenes para la Galería */
+.gallery-filter {
+    margin-bottom: 30px;
+}
+
+.gallery-filter button {
+    background-color: #e8c223;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.gallery-filter button:hover {
+    background-color: #d4af37;
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casino - Inicio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/icono.png" type="image/x-icon">
+    <script src="js/scripts.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        .video-container {
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: auto;
+        }
+
+        .service-item {
+            text-align: center;
+            margin-bottom: 20px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .service-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 3px solid #FFD700;
+            transition: transform 0.3s ease;
+        }
+
+        .service-img:hover {
+            transform: scale(1.1); 
+        }
+
+        .service-item h3, .service-item p {
+            margin-top: 10px;
+        }
+
+        .service-item .btn {
+            margin-top: 10px;
+        }
+
+        .row .col-md-4 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+    <audio id="background-audio" loop>
+        <source src="./img/Las Vegas Casino Music Video_ For Night Game of Poker, Blackjack, Roulette Wheel & Slots.mp3" type="audio/mp3">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let audio = document.getElementById("background-audio");
+            audio.volume = 0.3;
+
+            if (sessionStorage.getItem("audioTime")) {
+                audio.currentTime = sessionStorage.getItem("audioTime");
+            }
+
+            audio.play().catch(() => {
+                document.body.addEventListener("click", () => audio.play(), { once: true });
+            });
+
+            window.addEventListener("beforeunload", () => {
+                sessionStorage.setItem("audioTime", audio.currentTime);
+            });
+        });
+    </script>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Sala de Juegos</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./paginas/localizacion.html">Localización</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="serviciosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
+                            <ul class="dropdown-menu" aria-labelledby="serviciosDropdown">
+                                <li><a class="dropdown-item" href="./servicios/restaurante.html">Restaurante</a></li>
+                                <li><a class="dropdown-item" href="./servicios/sala_juegos.html">Sala de Juegos</a></li>
+                                <li><a class="dropdown-item" href="./servicios/cajeros.html">Cajeros</a></li>
+                            </ul>                            
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="./oferta/oferta.html">Oferta</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./galeria/galeria.html">Galería</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./paginas/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container text-center mt-5">
+        <h1>Bienvenidos a la Sala de Juegos</h1>
+        <p>Disfruta de la mejor experiencia en juegos de azar, apuestas deportivas y entretenimiento.</p>
+
+        <div class="video-container mt-4">
+            <video autoplay loop muted>
+                <source src="./img/videoplayback.mp4" type="video/mp4">
+            </video>
+        </div>
+    </main>
+
+    <section class="container mt-5">
+        <h2>Nuestros Servicios</h2><br>
+        <div class="row">
+            <div class="col-md-4 service-item">
+                <img src="./img/restaurante.jpg" alt="Restaurante" class="service-img"><br>
+                <h3>Restaurante</h3>
+                <p>Disfruta de una amplia variedad gastronómica en nuestro restaurante.</p>
+                <a href="./servicios/restaurante.html" class="btn btn-primary">Ver más</a>
+            </div>
+            <div class="col-md-4 service-item">
+                <img src="./img/juegos.jpg" alt="Sala de Juegos" class="service-img"><br>
+                <h3>Sala de Juegos</h3>
+                <p>Desde ruletas hasta máquinas de slots, encuentra tu juego favorito.</p>
+                <a href="./servicios/sala_juegos.html" class="btn btn-primary">Ver más</a>
+            </div>
+            <div class="col-md-4 service-item">
+                <img src="./img/cajero.jpg" alt="Cajeros" class="service-img"><br>
+                <h3>Cajeros</h3>
+                <p>Realiza tus transacciones de forma rápida y segura en nuestros cajeros.</p>
+                <a href="./servicios/cajeros.html" class="btn btn-primary">Ver más</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mt-5">
+        <h2>Galería</h2>
+        <p>Explora nuestras instalaciones y los juegos disponibles.</p>
+        <a href="./galeria/galeria.html" class="btn btn-secondary">Ver Galería</a>
+    </section>
+
+    <section class="container mt-5">
+        <h2>Oferta Especial</h2>
+        <p>Descarga las bases para participar en nuestra oferta y ganar grandes premios.</p>
+        <a href="./oferta/oferta.html" class="btn btn-warning">Ver Oferta</a>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; 2025 Sala de Juegos. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

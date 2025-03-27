@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casino - Ofertas</title>
+    <script src="audio.js"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="../img/icono.png" type="image/x-icon">
+    <script src="../js/scripts.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <audio id="background-audio" loop>
+        <source src="../img/Las Vegas Casino Music Video_ For Night Game of Poker, Blackjack, Roulette Wheel & Slots.mp3" type="audio/mp3">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">Sala de Juegos</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../paginas/localizacion.html">Localización</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="serviciosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
+                            <ul class="dropdown-menu" aria-labelledby="serviciosDropdown">
+                                <li><a class="dropdown-item" href="../servicios/restaurante.html">Restaurante</a></li>
+                                <li><a class="dropdown-item" href="../servicios/sala_juegos.html">Sala de Juegos</a></li>
+                                <li><a class="dropdown-item" href="../servicios/cajeros.html">Cajeros</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link active" href="../oferta/oferta.html">Oferta</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../galeria/galeria.html">Galería</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../paginas/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container text-center mt-5">
+        <h1>🎰 Ofertas Especiales 🎲</h1>
+        <p class="lead">Aprovecha nuestras promociones exclusivas y gana grandes premios.</p>
+        
+        <div class="row mt-4 justify-content-center">
+            <div class="col-md-4">
+                <div class="card bg-dark text-light shadow-lg">
+                    <img src="../img/bono" class="card-img-top img-fluid" alt="Oferta 1" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h3 class="card-title">Bono de Bienvenida Sin Deposito</h3>
+                        <p class="card-text">Doble de fichas en tu primera recarga.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-4">
+                <div class="card bg-dark text-light shadow-lg">
+                    <img src="../img/oferta.jpg" class="card-img-top img-fluid" alt="Oferta 2" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h3 class="card-title">Oferta Por Primer Depósito</h3>
+                        <p class="card-text">Un bono extra solo por tu primer depósito de mínimo 5€.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-4">
+                <div class="card bg-dark text-light shadow-lg">
+                    <img src="../img/sorteo.jpg" class="card-img-top img-fluid" alt="Oferta 3" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h3 class="card-title">Sorteo Mensual</h3>
+                        <p class="card-text">Gana viajes y premios en efectivo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="mt-5">
+            <a href="../pdf/promociones.pdf" class="btn btn-warning btn-lg" download>📄 Descargar Promociones</a>
+        </div>
+    </main>
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; 2025 Sala de Juegos. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante - Carnes y Pescados</title>
+    <script src="audio.js"></script>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="icon" href="../../img/icono.png" type="image/x-icon">
+    <script src="../js/scripts.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        .card-img-top {
+            width: 100%;
+            height: 200px;
+            object-fit: cover; 
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <audio id="background-audio" loop>
+        <source src="../../img/Las Vegas Casino Music Video_ For Night Game of Poker, Blackjack, Roulette Wheel & Slots.mp3" type="audio/mp3">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../../index.html">Sala de juegos</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="./entrantes.html">Entrantes</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="./CarnePescado.html">Carnes y Pescados</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./Pasta.html">Pasta</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./Postres.html">Postres</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./Vinos.html">Vinos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container text-center mt-5">
+        <h1>🥩 Carnes y Pescados Selectos</h1>
+        <p class="lead">Disfruta de nuestra selección de carnes y pescados de la mejor calidad.</p>
+
+        <div class="row mt-4">
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark text-light shadow-lg">
+                    <img src="../menu/img/solomillo" class="card-img-top" alt="Solomillo">
+                    <div class="card-body">
+                        <h3 class="card-title">Solomillo a la Brasa</h3>
+                        <p class="card-text">Jugoso solomillo de ternera cocinado a la brasa con guarnición.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark text-light shadow-lg">
+                    <img src="../menu/img/buey" class="card-img-top" alt="Chuletón">
+                    <div class="card-body">
+                        <h3 class="card-title">Chuletón de Buey</h3>
+                        <p class="card-text">Tierna carne de buey con un punto perfecto a la parrilla.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark text-light shadow-lg">
+                    <img src="../menu/img/cordero" class="card-img-top" alt="Cordero">
+                    <div class="card-body">
+                        <h3 class="card-title">Pierna de Cordero Asada</h3>
+                        <p class="card-text">Cordero asado lentamente con hierbas aromáticas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark text-light shadow-lg">
+                    <img src="../menu/img/salmon" class="card-img-top" alt="Salmón a la plancha">
+                    <div class="card-body">
+                        <h3 class="card-title">Salmón a la Plancha</h3>
+                        <p class="card-text">Lomo de salmón dorado a la plancha con salsa de eneldo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark text-light shadow-lg">
+                    <img src="../menu/img/merluza" class="card-img-top" alt="Merluza al horno">
+                    <div class="card-body">
+                        <h3 class="card-title">Merluza al Horno</h3>
+                        <p class="card-text">Merluza fresca al horno con patatas panaderas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark text-light shadow-lg">
+                    <img src="../menu/img/mariscada" class="card-img-top" alt="Mariscada">
+                    <div class="card-body">
+                        <h3 class="card-title">Mariscada Especial</h3>
+                        <p class="card-text">Gambas, langostinos, mejillones y más delicias del mar.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-5">
+            <a href="../restaurante.html" class="btn btn-danger btn-lg">🔙 Volver</a>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; 2025 Restaurante. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+/* General */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, #1c1c1c, #8b0000); /* Fondo de degradado oscuro a rojo */
+    color: #dcdcdc; /* Letras en gris claro */
+    text-align: center;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Barra de Navegación */
+nav .navbar-brand {
+    font-size: 2.5rem;
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: bold;
+    color: #ffcc00;
+    text-shadow: 2px 2px 10px rgba(255, 204, 0, 0.8);
+}
+
+nav .nav-link {
+    color: #dcdcdc !important;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.3);
+}
+
+nav .nav-link:hover {
+    color: #ffcc00 !important;
+    text-shadow: 2px 2px 8px rgba(255, 204, 0, 0.6);
+}
+
+/* Títulos */
+h1, h2, h3 {
+    font-size: 2.8rem;
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: bold;
+    color: #ff0000; /* Color rojo */
+    text-shadow: 3px 3px 0px #ffcc00, 5px 5px 10px #ffcc00;
+    animation: neonGlow 1.5s infinite alternate;
+}
+
+@keyframes neonGlow {
+    0% { text-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00; }
+    50% { text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00; }
+    100% { text-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00; }
+}
+
+/* Estilo de formulario */
+.formulario-contacto {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(255, 204, 0, 0.5);
+    color: #fff;
+}
+
+.formulario-contacto .form-control {
+    background: linear-gradient(145deg, #8b8b8b, #ffffff);
+    border-radius: 10px;
+    color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.formulario-contacto .form-label {
+    color: #ff0000; /* Color rojo */
+    font-weight: bold;
+}
+
+/* Botones */
+.btn {
+    background-color: #ffcc00;
+    border-color: #ffcc00;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.2s;
+    box-shadow: 0px 4px 10px rgba(255, 204, 0, 0.6);
+}
+
+.btn:hover {
+    background-color: #d4af37;
+    border-color: #d4af37;
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #dcdcdc;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1.2rem;
+}

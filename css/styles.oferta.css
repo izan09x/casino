@@ -1,0 +1,30 @@
+/* Estilo específico para la Página de Oferta */
+.oferta {
+    padding: 50px 0;
+    background-color: #212121;
+}
+
+.oferta h1 {
+    font-size: 3rem;
+    color: #e8c223;
+}
+
+.oferta p {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+.oferta .btn-download {
+    background-color: #e8c223;
+    border: none;
+    color: black;
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.oferta .btn-download:hover {
+    background-color: #d4af37;
+}
